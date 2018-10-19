@@ -792,7 +792,7 @@ def check_violation(route, vehicle_type):
 
             # checking vehicle max volume
             accu_res[2] += (num_demd[curr_cust][0] * bskt_vol + num_demd[curr_cust][1] * trsf_vol + (num_demd[curr_cust][2]
-                   + num_demd[curr_cust][3]) * milk_vol + num_demd[curr_cust][4] * paper_bskt)
+                            + num_demd[curr_cust][3]) * milk_vol + num_demd[curr_cust][4] * paper_bskt)
 
             if accu_res[2] > veh_cap[2]:
                 # print('Infeasible route!(Max Weight/Volume Error.)', accu_res[2])
@@ -855,8 +855,8 @@ def route_type(route):
     else:
         for i in range(1, len(route) - 1):
             cust0 = route[i]
-            vol_accu += (num_demd[cust0][0] * bskt_vol + num_demd[cust0][1] * trsf_vol + (num_demd[cust0][2] + \
-                num_demd[cust0][3]) * milk_vol + num_demd[cust0][4] * paper_bskt)
+            vol_accu += (num_demd[cust0][0] * bskt_vol + num_demd[cust0][1] * trsf_vol + (num_demd[cust0][2] +
+                         num_demd[cust0][3]) * milk_vol + num_demd[cust0][4] * paper_bskt)
 
     if vol_accu <= small_veh[2]:
         return 2
