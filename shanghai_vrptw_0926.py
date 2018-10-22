@@ -417,7 +417,7 @@ class OutputFormat(object):
             store[21] = 0  # 卸货体积
             store[22] = 0  # 卸货重量
 
-            store0 =copy.deepcopy(store)
+            store0 = copy.deepcopy(store)
             result.append(store0)
 
             # t = departt + time_mat[0, veh[1]] + oprt_t  # t is the leaving time
