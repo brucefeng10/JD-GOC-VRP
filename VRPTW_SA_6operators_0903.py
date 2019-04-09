@@ -21,7 +21,7 @@ def read_data(file_num):
     dist_mat = np.zeros([cust_num + charge_num, cust_num + charge_num])
 
 
-    with open(r'C:\Bee\ProjectFile\JD_GOC\Inputdata\inputnode_%s.csv' % file_num, 'rU') as fc:
+    with open(r'data\inputnode_%s.csv' % file_num, 'rU') as fc:
         reader = csv.reader(fc)
         next(reader)
         next(reader)
@@ -38,7 +38,7 @@ def read_data(file_num):
     # print cust_need
     # print cust_time
 
-    with open(r'C:\Bee\ProjectFile\JD_GOC\Inputdata\inputdistancetime_%s.txt' % file_num, 'r') as fd:
+    with open(r'data\inputdistancetime_%s.txt' % file_num, 'r') as fd:
         next(fd)
         for row in fd:
             to_list = row.strip('\n').split(',')
