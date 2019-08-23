@@ -1,5 +1,5 @@
 # JD-GOC-VRP
-VRPTW variation of JD Global Optimization Challange
+VRPTW variation of JD Global Optimization Challange(Final rank: 15/1921)
 
 
 Algorithm summary:
