@@ -1,4 +1,6 @@
 # JD-GOC-VRP
+[点击进入赛题详情...](https://jdata.jd.com/html/detail.html?id=5)
+
 VRPTW variation of JD Global Optimization Challange (2018/9/15, Final rank: 15/1921)
 
 
